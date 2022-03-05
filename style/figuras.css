@@ -1,0 +1,136 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #ACD9B2;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    display: grid;
+    height: 84px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+header h1 {
+    justify-self: center;
+    margin-bottom: 0;
+    margin-top: 12px;
+    color: var(--green);
+}
+
+header p {
+    justify-self: center;
+    margin-top: 1px;
+    color: var(--very-light-pink);
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 84vh;
+}
+
+.figura {
+    height: 90%;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    display: grid;
+    justify-items: center;
+    padding: 12px;
+    margin: 12px;
+}
+
+.figura img {
+    width: 150px;
+    height: 150px;
+}
+
+.figura input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.figura input::placeholder {
+    color: var(--green);
+}
+
+.form-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 300px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.primary {
+    background-color: var(--green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.secondary {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.title {
+    margin: 1px;
+    color: var(--green);
+    font-weight: bold;
+    font-size: var(--lg);
+}
+
+.label {
+    text-align: center;
+    color: var(--very-light-pink);
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 1px;
+}
+
+.description {
+    text-align: center;
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+}
