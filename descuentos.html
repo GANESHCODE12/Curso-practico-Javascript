@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>Porcentajes y descuentos | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Descuentos
+        </h1>
+        <p>Este es el segundo taller del curso práctico de JavaScript</p>
+    </header>
+
+    <div class="main-container">
+        <section class="formula">
+            <h3>Calcula el precio con descuento de un producto</h3>
+            <img src="./assets/img/carrito.png" alt="carrito">
+            <div class="form-container">
+                <form action="" class="form">
+                    <label for="InputPrice" class="label">
+                        Escribe el precio de tu producto
+                    </label>
+                    <input id="InputPrice" type="number">
+                    <label for="InputDiscount" class="label">
+                        Escribe el descuento de tu producto
+                    <input id="InputDiscount" type="number">
+                    <label for="InputCoupon" class="label">
+                        Escribe el descuento de tu producto
+                    <select id="InputCoupon" type="number" class="select-cupon">
+                        <option value="sin_cupon">--------</option>
+                        <option value="nuevo">Nuevo</option>
+                        <option value="fidelizacion">Fidelización</option>
+                        <option value="gran_compra">Gran compra</option>
+                    </select>
+                    <button class="primary" type="button" onclick="priceDiscount()">
+                        Calcula el precio con decuento
+                    </button>
+                </form>
+            </div>
+            <p class="label">El precio a pagar es:</p>
+            <div class="resultado">
+                <p id="precioResultado">
+
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="./descuentos.js"></script>
+</body>
+</html>

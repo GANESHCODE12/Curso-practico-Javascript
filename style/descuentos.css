@@ -1,8 +1,8 @@
 :root {
     --black: #000000;
     --white: #FFFFFF;
-    --green: #ACD9B2;
-    --very-light-pink: #C7C7C7;
+    --green: #9caad8;
+    --very-light-pink: #b4aed3;
     --text-input-field: #F7F7F7;
     --sm: 14px;
     --md: 16px;
@@ -27,6 +27,13 @@ header h1 {
     color: var(--green);
 }
 
+h3 {
+    text-align: center;
+    color: var(--green);
+    font-weight: bold;
+    margin-top: 0px;
+}
+
 header p {
     justify-self: center;
     margin-top: 1px;
@@ -37,37 +44,36 @@ header p {
 
 .main-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    height: 84vh;
+    justify-content: center;
 }
 
-.figura {
+.formula {
+    align-self: center;
     border: 1px solid var(--green);
     border-radius: 8px;
     display: grid;
-    justify-items: center;
-    padding: 12px;
-    margin: 12px;
+    place-items: center;
+    padding: 24px;
 }
 
-.figura img {
+.formula img {
     width: 150px;
     height: 150px;
-    margin: 8px 0 8px;
 }
 
-.figura input {
+.formula input,
+.formula select {
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
     height: 30px;
     font-size: var(--md);
     padding: 6px;
-    margin: 8px 0 8px;
+    margin-bottom: 24px;
+    width: 100%;
 }
 
-.figura input::placeholder {
+.formula input::placeholder {
     color: var(--green);
 }
 
@@ -89,11 +95,11 @@ header p {
     border: none;
     color: var(--white);
     height: 50px;
-    width: auto;
+    width: 100%;
     cursor: pointer;
     font-size: var(--md);
     font-weight: bold;
-    margin: 12px;
+    margin-bottom: 24px;
 }
 
 .title {
@@ -104,11 +110,10 @@ header p {
 }
 
 .label {
-    text-align: center;
     color: var(--very-light-pink);
     font-weight: bold;
     font-size: var(--md);
-    margin: 8px 0 0;
+    margin: 1px;
 }
 
 .description {

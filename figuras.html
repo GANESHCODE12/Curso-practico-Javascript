@@ -32,15 +32,22 @@
                             Escribe la medida de uno de los lados de tu cuadrado
                         </p>
                         <input id="InputCuadrado" type="number">
-                        <section class="buttons">
-                            <button class="primary" type="button" onclick="calcularPerimetroCuadrado()">
-                                Calcula el perímetro
-                            </button>
-                            <button class="secondary" type="button" onclick="calcularAreaCuadrado()">
-                                Calcula el área
-                            </button>
-                        </section>
+                        <button class="primary" type="button" onclick="analisisCuadrado()">
+                            Calcular
+                        </button>
                     </form>
+                </div>
+                <p class="label">El perimetro es:</p>
+                <div class="resultado">
+                    <p id="perimetroCuadrado">
+
+                    </p>
+                </div>
+                <p class="label">El área es:</p>
+                <div class="resultado">
+                    <p id="areaCuadrado">
+
+                    </p>
                 </div>
             </div>
         </section>
@@ -64,15 +71,28 @@
                         <input type="number" placeholder="Lado 2" id="InputLado2">
                         <input type="number" placeholder="Base" id="InputBase">
                         <input type="number" placeholder="Altura" id="InputAltura">
-                        <section class="buttons">
-                            <button class="primary" type="button" onclick="calcularPerimetroTriangulo()">
-                                Perímetro o altura
-                            </button>
-                            <button class="secondary" type="button" onclick="calcularAreaTriangulo()">
-                                Calcula el área
-                            </button>
-                        </section>
+                        <button class="primary" type="button" onclick="analisisTriangulo()">
+                            Calcular
+                        </button>
                     </form>
+                </div>
+                <p class="label">El perimetro es:</p>
+                <div class="resultado">
+                    <p id="perimetroTriangulo">
+
+                    </p>
+                </div>
+                <p class="label">El área es:</p>
+                <div class="resultado">
+                    <p id="areaTriangulo">
+
+                    </p>
+                </div>
+                <p class="label">Altura isósceles es:</p>
+                <div class="resultado">
+                    <p id="alturaTriangulo">
+
+                    </p>
                 </div>
             </div>
         </section>
@@ -89,15 +109,22 @@
                             Escribe la medida del radio de tu circulo
                         </p>
                         <input id="InputRadio" type="number">
-                        <section class="buttons">
-                            <button class="primary" type="button" onclick="calcularPerimetroCirculo()">
-                                Calcula el perímetro
-                            </button>
-                            <button class="secondary" type="button" onclick="calcularAreaCirculo()">
-                                Calcula el área
-                            </button>
-                        </section>
+                        <button class="primary" type="button" onclick="analisisCirculo()">
+                            Calcular
+                        </button>
                     </form>
+                </div>
+                <p class="label">El perimetro es:</p>
+                <div class="resultado">
+                    <p id="perimetroCirculo">
+
+                    </p>
+                </div>
+                <p class="label">El área es:</p>
+                <div class="resultado">
+                    <p id="areaCirculo">
+
+                    </p>
                 </div>
             </div>
         </section>
