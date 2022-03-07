@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/promedio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>Promedio, mediana y moda | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Promedio, mediana y moda
+        </h1>
+        <p>Este es el tercer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <div class="main-container">
+        <section class="formula">
+            <h3>Calcula el promedio, la mediana y la moda</h3>
+            <img src="./assets/img/estadistica.png" alt="carrito">
+            <p class="description">
+                Por favor ten en cuenta que debes escribir la lista
+                con los números separados por comas (,) y sin espacio entre ellos.
+            </p>
+            <div class="form-container">
+                <form action="" class="form">
+                    <label for="InputLista" class="label">
+                        Escribe la lista
+                    </label>
+                    <input id="InputLista" type="text">
+                    <button class="primary" type="button" onclick="calcularEstadistica()">
+                        Calular
+                    </button>
+                </form>
+            </div>
+            <p class="label">El promedio de tu lista es:</p>
+            <div class="resultado">
+                <p id="promedio">
+
+                </p>
+            </div>
+            <p class="label">La mediana de tu lista es:</p>
+            <div class="resultado">
+                <p id="mediana">
+
+                </p>
+            </div>
+            <p class="label">La moda de tu lista es:</p>
+            <div class="resultado">
+                <p id="moda">
+
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="./promedio.js"></script>
+</body>
+</html>

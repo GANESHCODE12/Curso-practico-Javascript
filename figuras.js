@@ -86,7 +86,7 @@ function analisisTriangulo(){
     peri.innerText = `El perimetro del triángulo es: ${perimetro}`;
 
 
-    //Mensaje perímetro
+    //Mensaje altura
     if (valor1 === valor2 && valor1 != valor3) {
         const alturaIso = Math.sqrt((valor1 ** 2) - (valor3 ** 2/4));
 
