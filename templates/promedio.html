@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/promedio.css">
+    <link rel="stylesheet" href="../style/promedio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
@@ -12,16 +12,43 @@
 </head>
 <body>
     <header>
+        <nav>
+            <div class="navbar-left">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./figuras.html">Figuras</a>
+                    </li>
+                    <li>
+                        <a href="./descuentos.html">Descuentos</a>
+                    </li>
+                    <li>
+                        <a href="./promedio.html">Estadística</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="navbar-right">
+                <ul>
+                    <li class="navbar-email">balarama10@gmail.com</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="titulo">
         <h1>
             Promedio, mediana y moda
         </h1>
         <p>Este es el tercer taller del curso práctico de JavaScript</p>
-    </header>
+    </div>
 
     <div class="main-container">
         <section class="formula">
             <h3>Calcula el promedio, la mediana y la moda</h3>
-            <img src="./assets/img/estadistica.png" alt="carrito">
+            <img src="../assets/img/estadistica.png" alt="carrito">
             <p class="description">
                 Por favor ten en cuenta que debes escribir la lista
                 con los números separados por comas (,) y sin espacio entre ellos.
@@ -57,6 +84,6 @@
             </div>
         </section>
     </div>
-    <script src="./promedio.js"></script>
+    <script src="../js/promedio.js"></script>
 </body>
 </html>

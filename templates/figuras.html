@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/figuras.css">
+    <link rel="stylesheet" href="../style/figuras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
@@ -12,11 +12,37 @@
 </head>
 <body>
     <header>
+        <nav>
+            <div class="navbar-left">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./figuras.html">Figuras</a>
+                    </li>
+                    <li>
+                        <a href="./descuentos.html">Descuentos</a>
+                    </li>
+                    <li>
+                        <a href="./promedio.html">Estadística</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li class="navbar-email">balarama10@gmail.com</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="titulo">
         <h1>
             Figuras Geométricas
         </h1>
         <p>Este es el primer taller del curso práctico de JavaScript</p>
-    </header>
+    </div>
 
     <div class="main-container">
         <section>
@@ -24,7 +50,7 @@
                 <p class="title">
                     Calcula el área y perímetro de un cuadrado
                 </p>
-                <img src="./assets/img/cuadrado.png" alt="cuadrado">
+                <img src="../assets/img/cuadrado.png" alt="cuadrado">
                 
                 <div class="form-container">
                     <form action="" class="form">
@@ -56,7 +82,7 @@
                 <p class="title">
                     Calcula el área y perímetro de un triángulo
                 </p>
-                <img src="./assets/img/triangulo.png" alt="triangulo">
+                <img src="../assets/img/triangulo.png" alt="triangulo">
                 
                 <div class="form-container">
                     <form action="" class="form">
@@ -101,7 +127,7 @@
                 <p class="title">
                     Calcula el área y perímetro de un circulo
                 </p>
-                <img src="./assets/img/circulo.png" alt="circulo">
+                <img src="../assets/img/circulo.png" alt="circulo">
                 
                 <div class="form-container">
                     <form action="" class="form">
@@ -129,6 +155,6 @@
             </div>
         </section>
     </div>
-    <script src="./figuras.js"></script>
+    <script src="../js/figuras.js"></script>
 </body>
 </html>

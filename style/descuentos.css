@@ -12,19 +12,70 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-header {
-    display: grid;
-    height: 84px;
-    margin-bottom: 15px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
+
 }
 
-header h1 {
-    justify-self: center;
+.menu {
+    display: none;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left ul {
+    margin-left: 12px;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 9px;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.navbar-email {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.titulo h1 {
+    text-align: center;
     margin-bottom: 0;
     margin-top: 12px;
     color: var(--green);
+}
+
+.titulo p {
+    text-align: center;
+    margin-top: 1px;
+    color: var(--very-light-pink);
+    font-weight: bold;
+    margin-bottom: 24px;
 }
 
 h3 {
@@ -32,14 +83,6 @@ h3 {
     color: var(--green);
     font-weight: bold;
     margin-top: 0px;
-}
-
-header p {
-    justify-self: center;
-    margin-top: 1px;
-    color: var(--very-light-pink);
-    font-weight: bold;
-    margin-bottom: 1px;
 }
 
 .main-container {
